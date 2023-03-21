@@ -1,0 +1,401 @@
+
+
+section 
+{
+	padding-top     : 5rem;
+}
+/*nav*/
+nav 
+{
+
+}
+nav .navbar-brand
+{
+	font-weight: bold;
+	font-size: 	30px;
+	text-shadow: 0 0 10px red,
+	0 0 20px red,
+	0 0 40px gold,
+	0 0 80px red,
+	0 0 120px red;	
+}
+nav span
+{
+   color           : #333;	
+}
+/*akhir nav*/
+
+/*slider*/
+#containerS 
+{
+	background-color: #333;
+}
+/*akhir slier*/
+
+/*jumbotron*/
+.jumbotron
+{
+	padding-top     : 4rem;
+	background-color: #333;
+}
+.jumbotron img
+{
+	box-shadow: 0 0 10px red,
+	0 0 20px red,
+	0 0 30px orange,
+	0 0 40px red,
+	0 0 50px red;
+}
+.jumbotron h2 
+{
+	color: #fff;
+	font-size: 5em;
+	font-weight: 600;
+	letter-spacing: 0.1em;
+	text-shadow: 0 0 10px orange,
+	0 0 20px orange,
+	0 0 40px orange,
+	0 0 80px red,
+	0 0 120px orange;
+}
+.jumbotron h5 
+{
+	color           : #fff;
+	font-weight: 200;
+	text-shadow: 0 0 10px red,
+	0 0 20px red,
+	0 0 40px gold,
+	0 0 80px red,
+	0 0 120px red;
+}
+/* akhirjumbotron*/
+
+/*about*/
+#about {
+	background-color: #fff;
+	color: black;
+	padding-bottom: 0;
+}
+.col h2{
+	color: #ff5500;
+	text-shadow: 0 0 1px red,
+	0 0 2px red,
+	0 0 3px gold,
+	0 0 4px red,
+	0 0 5px red;
+}
+
+.row1 img{
+	width             : 50px;
+	margin            : 0 3px;
+}
+.row1 img:hover{
+	transform         : scale(1.1);
+}
+/*akhir about*/
+
+/*menu*/
+#menu
+{
+	background-color: #fff;
+}
+#menu h2
+{
+	color           : #ff5500;
+	text-shadow: 0 0 1px red,
+	0 0 2px red,
+	0 0 3px gold,
+	0 0 4px red,
+	0 0 5px red
+}
+#menu .row
+{
+	text-align      : center;
+}
+#menu .card-body
+{
+	background-color: #333;
+}
+#menu .card
+{
+	color: #fff;
+	background-color: #333;
+	background   : linear-gradient(45deg, #ffbc00, #ff0058);
+	border-radius: 20px;
+    z-index      : 2;
+    box-shadow   : 0 0 8px orange,
+	               0 0 10px gold,
+	               0 0 12px red,
+	               0 0 14px gold,
+	               0 0 16px orange;
+}
+
+.bottom .btn
+{
+	position    : relative;
+	width       : 100px;
+	height      : 35px;
+	margin-right: 120px;
+}
+.bottom .btn a
+{
+	position       : absolute;
+	top            : 0;
+	left           : 0;
+	width          : 100%;
+	height         : 100%;
+	display        : flex;
+	justify-content: center;
+	align-items    : center;
+	background     : rgba(255,255,255,0.05);
+	box-shadow     : 0 15px 35px rgba(0,0,0,0.2);
+	border-top     : 1px solid rgba(255,255,255,0.1);
+	border-bottom  : 1px solid rgba(255,255,255,0.1); 
+	border-radius  : 30px;
+	color          : #fff;
+	z-index        : 1;
+	font-weight    : 400;
+	font-size: 13px;
+	letter-spacing : 0.5px;
+	text-decoration: none;
+	overflow       : hidden;
+	transition     : 0.5;
+	backdrop-filter: blur(15px);
+}
+.bottom .btn:hover a
+{
+	letter-spacing: 1px;
+}
+.bottom .btn a::before
+{
+	content   : '';
+	position  : absolute;
+	top       : 0;
+	left      : 0;
+	width     : 50%;
+	height    : 100% ;
+	background: linear-gradient(to left, rgba(255,255,255,0.15),transparent);
+	transform : skew(45deg) translateX(0);
+	transition: 0.5s;
+}
+.bottom .btn:hover a::before
+{
+   transform : skew(45deg) translateX(200%);
+}
+.bottom .btn::before 
+{
+	content         : '';
+	position        : absolute;
+	left            : 50%;
+	transform       : translateX(-50%);
+    bottom          : -5px;
+    width           : 30px;
+    height          : 10px;
+    background      : #f00;
+    border-radius   : 10px;
+    transition      : 0.5;
+    transition-delay :0s;
+}
+.bottom .btn:hover::before
+{
+   bottom          : 0;
+   height          : 50%;
+   width           : 70%;
+   border-radius   : 30px;
+   transition-delay:0.5s; 
+}
+.bottom .btn::after 
+{
+	content         : '';
+	position        : absolute;
+	left            : 50%;
+	transform       : translateX(-50%);
+    top             : -5px;
+    width           : 30px;
+    height          : 10px;
+    background      : #red;
+    border-radius   : 10px;
+    transition      : 0.5;
+    transition-delay: 0s;
+}
+.bottom .btn:hover::after
+{
+   top             : 0;
+   height          : 50%;
+   width           : 80%;
+   border-radius   : 30px;
+   transition-delay: 0.5s; 
+}
+
+.bottom .btn:nth-child(1)::before,
+.bottom .btn:nth-child(1)::after
+{
+	background : red;
+	box-shadow : 0 0 5px red,
+	             0 0 15px red,
+	             0 0 30px red,
+	             0 0 60px red;
+}
+/*akhir menu*/
+
+/* menu2*/
+#menuu 
+{
+	padding-top: 0;
+	width: 100%;
+	background-color: black;
+}
+.menu2 
+{
+	position       : relative;
+	width          : 100%;
+	height         : 30vh;
+	display        : flex;
+	justify-content: center;
+	align-items    : center;
+	flex-direction: column;
+	background     : #001300;
+	animation: changeColor 5s linear infinite;
+}
+@keyframes changeColor
+{
+  0%{
+  	filter: hue-rotate(0deg);
+  }
+  100%{
+  	filter: hue-rotate(360deg);
+  }
+}
+.menu2  h2 
+{
+	color: orange;
+	font-family: consolas;
+	font-weight: 300;
+	letter-spacing: 2px;
+}
+.menu2  .loader
+{
+	position: relative;
+	display: flex;
+}
+.menu2  .loader .dot
+{
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background :orange;
+  box-shadow: 0 0 10px red,
+              0 0 20px red,
+              0 0 40px gold,
+              0 0 60px red,
+              0 0 80px red,
+              0 0 100px red;
+  margin: 20px 10px;
+  /*transform: scale(0.1);*/
+  border-radius: 50%;
+  animation: animateDot 2s linear infinite;
+  animation-delay: calc(0.1S * var(--i));
+}
+.menu2  .loader:last-child .dot
+{
+	animation-delay: calc(-0.1S * var(--i));
+}
+@keyframes animateDot 
+{
+	0%
+	{
+		transform: scale(0.1);
+	}
+	10%
+	{
+		transform: scale(0.1);
+	}
+	50%,100%%
+	{
+		transform: scale(0.1);
+	}
+
+}
+
+/*akhir menu2*/
+
+/*order*/
+#order 
+{
+	background-color: #333; 
+}
+#order h2
+{
+	text-align      : center;
+	padding-left    : 3rem;
+	color           : #ff5500; 	
+	text-shadow: 0 0 1px red,
+	0 0 2px red,
+	0 0 3px gold,
+	0 0 4px red,
+	0 0 5px red;
+}
+#order .form-label
+{
+	color: #fff;
+}
+#order button a
+{
+	color: #fff;
+}
+/*akhir order*/
+
+/*footer*/
+footer 
+{
+	background-color: #fd7e14;
+	padding-top     : 0;
+	color           : #fff;
+	text-align      : center;
+	height          : 40px;
+}
+/* akhir footer*/
+
+
+.swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: grey;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+    height: 350px;
+    box-shadow: 0 0 8px orange,
+	0 0 10px gold,
+	0 0 12px red,
+	0 0 14px gold,
+	0 0 16px red;
+}
+
+.info h5{
+    margin: 0;
+    padding-top: 15px;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.685);
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.info span{
+    font-size: 15px;
+    color: red;
+    font-weight: bold;
+}
+
+/**/
+
